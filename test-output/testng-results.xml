@@ -2,21 +2,21 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-23T00:11:37 IST" name="Default suite" finished-at="2025-05-23T00:11:39 IST" duration-ms="2499">
+  <suite started-at="2025-05-23T00:59:05 IST" name="Default suite" finished-at="2025-05-23T00:59:08 IST" duration-ms="3392">
     <groups>
     </groups>
-    <test started-at="2025-05-23T00:11:37 IST" name="Default test" finished-at="2025-05-23T00:11:39 IST" duration-ms="2499">
+    <test started-at="2025-05-23T00:59:05 IST" name="Default test" finished-at="2025-05-23T00:59:08 IST" duration-ms="3392">
       <class name="test.AppTest">
-        <test-method signature="emergencynotification()[pri:0, instance:test.AppTest@2d7275fc]" started-at="2025-05-23T00:11:37 IST" name="emergencynotification" finished-at="2025-05-23T00:11:39 IST" duration-ms="2420" status="FAIL">
+        <test-method signature="testemergencynotification()[pri:0, instance:test.AppTest@2d7275fc]" started-at="2025-05-23T00:59:05 IST" name="testemergencynotification" finished-at="2025-05-23T00:59:08 IST" duration-ms="3325" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
-Expected status code <200> but was <403>.
+Expected status code <202> but was <403>.
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <403>.
+Expected status code <202> but was <403>.
 
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -48,7 +48,7 @@ at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCal
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at test.AppTest.emergencynotification(AppTest.java:49)
+at test.AppTest.testemergencynotification(AppTest.java:102)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -80,7 +80,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- emergencynotification -->
+        </test-method> <!-- testemergencynotification -->
       </class> <!-- test.AppTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

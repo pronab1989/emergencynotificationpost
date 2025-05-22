@@ -5,7 +5,7 @@
     <classes>
       <class name="test.AppTest">
         <methods>
-          <include name="emergencynotification"/>
+          <include name="testemergencynotification"/>
         </methods>
       </class> <!-- test.AppTest -->
     </classes>
