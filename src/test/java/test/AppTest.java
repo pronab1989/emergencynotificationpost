@@ -64,7 +64,7 @@ public class AppTest {
     @Test
     public void testemergencynotification() {
 
-        RestAssured.baseURI = "http://localhost:8080";
+        RestAssured.baseURI = "http://localhost:8080/newdrm/rest/iptv/tpCmdManager/newCommand";
 
         String jsonBody = "{\n" +
                 "    \"postJson\": {\n" +
@@ -90,7 +90,7 @@ public class AppTest {
                 "}";
 
         given()
-            .basePath("/newdrm/rest/iptv/tpCmdManager/newCommand")  // ✅ Just the path
+            .basePath("http://localhost:8080/newdrm/rest/iptv/tpCmdManager/newCommand")  // ✅ Just the path
             .header("username", "admin")
             .header("apikey", "0276d666-3593-40ae-b2fb-18deb8c54255")
             .contentType(ContentType.JSON) // ✅ Use RestAssured constant or lowercase
